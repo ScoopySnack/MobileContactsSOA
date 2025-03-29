@@ -3,7 +3,7 @@ package gr.cf.java.app.model;
 public class AbstractEntity {
     private long id;
 
-    public long getId() {
+    public Long getId() {
         return id;
     }
 
