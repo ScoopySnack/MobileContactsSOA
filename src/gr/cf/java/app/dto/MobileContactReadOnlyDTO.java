@@ -1,14 +1,15 @@
 package gr.cf.java.app.dto;
 
-public class MobileContactUpdateDTO extends BaseDTO{
+public class MobileContactReadOnlyDTO extends BaseDTO{
     private String firstname;
     private String lastname;
     private String phoneNumber;
 
-    public MobileContactUpdateDTO() {
+
+    public MobileContactReadOnlyDTO() {
     }
 
-    public MobileContactUpdateDTO(Long id,String firstname, String lastname, String phoneNumber) {
+    public MobileContactReadOnlyDTO(Long id, String firstname, String lastname, String phoneNumber) {
         setId(id);
         this.firstname = firstname;
         this.lastname = lastname;

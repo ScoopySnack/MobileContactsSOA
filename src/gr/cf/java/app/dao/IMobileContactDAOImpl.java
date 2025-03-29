@@ -87,7 +87,7 @@ public class IMobileContactDAOImpl implements IMobileContactDAO {
     @Override
     public boolean userIdExists(Long id) {
         int position = getIndexById(id);
-        return position != -1;
+        return position == -1;
 
         //return contacts.stream().anyMatch(c -> c.getId().equals(id));
     }
